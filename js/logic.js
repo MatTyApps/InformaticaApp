@@ -124,6 +124,9 @@ function next(antwoord) {
 		document.getElementById("knop2").style.visibility = 'hidden'; 
 		document.getElementById("knop3").style.visibility = 'hidden'; 
 		document.getElementById("knop4").style.visibility = 'hidden'; 
+		vraagNum = 2;
+		goed = 0;
+		fout = 0;
 		document.getElementById("restart").style.visibility = 'visible'; 		
 	}
 
