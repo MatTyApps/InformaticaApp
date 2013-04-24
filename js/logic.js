@@ -124,6 +124,7 @@ function next(antwoord) {
 		document.getElementById("knop2").style.visibility = 'hidden'; 
 		document.getElementById("knop3").style.visibility = 'hidden'; 
 		document.getElementById("knop4").style.visibility = 'hidden'; 
+		document.getElementById("restart").style.visibility = 'visible'; 		
 	}
 
 }
