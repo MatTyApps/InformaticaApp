@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Naam van App</title>
+		<title>Wetenschappsquiz</title>
 		<!-- PhoneGap -->
 		<script src="phonegap.js" type="text/javascript"></script>
 
@@ -12,15 +12,36 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery.mobile.js"></script>
 
-		<!-- Jouw App -->
+		<!-- Logic -->
 		<script src="js/logic.js" type="text/javascript"></script>
+		
+		<!-- Nu nog mooi maken -->
 		<link href="css/style.css" rel="stylesheet" />
 	</head>
 
-	<body>
+	<body>	<!-- Start de quiz -->
+	
 		<div id="main-container">
-			<h1>Hello World!</h1>
-			<a href="#" onclick="testCam()">Test Camera</a>
+			<!-- Titel -->
+			<h1>Wetensch<font color=orange>app</font>squiz</h1>
+			
+			<!-- Content -->
+			<div id="content">
+				<div id="vraag">Welke vogel kan achteruit vliegen?<br/><br/><img width=300 height=300 src="images/vraag1.jpg"></img></div>
+				
+				<div id="knoppen">
+					<div id="knop"><a id="knop1" href="#" onclick="pressA()">Specht</a></div>
+					<div id="knop"><a id="knop2" href="#" onclick="pressB()">Kolibrie</a></div>
+					<div id="knop"><a id="knop3" href="#" onclick="pressC()">Valk</a></div>
+					<div id="knop"><a id="knop4" href="#" onclick="pressD()">Ijsvogel</a></div>
+
+				</div>
+				
+				<div id="punten">
+					<font id="goed" color=green>Goed: 0</font><br/>
+					<font id="fout" color=red>Fout: 0</font>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
